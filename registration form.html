@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration </title>
+    <style>
+    body{
+        background-color:rgb(1, 1, 31);
+        padding: 20px ;
+        font-family: "poppins";
+    }  
+    p{
+        text-align: center;
+        font-size:50px;
+color:beige;
+    }
+    .caption{
+    text-align: center ; 
+    color:beige; 
+    font-size: larger ;
+    margin-bottom: 20px;
+    }
+    .first-name , .lastname,.email,.pasword{ 
+        color:beige;
+        font-size: larger;
+        margin-top: 20px;
+    }
+    input{
+         background-color:rgb(66, 106, 5);
+         border: 1px solid;
+         padding: auto;
+         color:white;
+    }
+    input{
+        margin: 10px;
+width: 50%;
+max-height: 2rem;
+    }
+
+    .inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+  background-color: beige;
+}
+    
+    
+   
+
+    </style>
+</head>
+<body>
+   <p> <b> Registration form </b>  </p>
+   <form> 
+    <legend class="caption"> Please fill out this form with the required information </legend>
+
+    <legend class=" first-name">
+        Enter your first name:
+    </legend>
+             <input id="name" name="name" type="text" placeholder="please enter your first name here" required>
+
+        <legend class="lastname">
+            Enter your last name:
+        </legend>
+                 <input id="last-name" name="last-name" type="text" placeholder="please enter your last name here" required>
+      
+            <legend class="email">
+                Enter your E-mail :
+            </legend>
+                     <input id="e-mail" name="e-mail" type="text" placeholder="please enter your e-mail here" required>
+               
+             <legend class="pasword">
+                    Enter your new password:
+                </legend>
+                         <input id="password" name="password" type="password" pattern="[a-z0-5]{8,}" required  placeholder="please enter your password here" required >
+
+  <!--  <br>
+    <label for="personal-account">
+        <input id = "personal-account" type="radio" class="inline" name="personal-buisness"> personal-account
+    </label>
+
+    <label for="buisness-account">
+        <input id = "buisness-account" type="radio" class="inline" name="personal-buisness"> buisness-account
+    </label>   -->
+
+    <fieldset>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Personal Account</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business Account</label>
+                   
+                            
+   </form> 
+</body>
+</html>
